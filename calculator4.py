@@ -1,8 +1,14 @@
-# Demonstrates conversion of str to float
+# Demonstrates defining a function with a return value
 
-x = float(input("What's x? "))
-y = float(input("What's y? "))
 
-z = x + y
+def main():
+    x = int(input("What's x? "))
+    print("x squared is", square(x))
 
-print(z)
+
+def square(n):
+    return n * n
+
+
+if __name__ == "__main__":
+    main()

@@ -1,9 +1,14 @@
-# Demonstrates (unintended) concatenation of strings
+# Demonstrates defining a function with a return value
 
-# Prompt user for two integers
-x = input("What's x? ")
-y = input("What's y? ")
 
-# Print sum
-z = x + y
-print(z)
+def main():
+    x = int(input("What's x? "))
+    print("x squared is", square(x))
+
+
+def square(n):
+    return n * n
+
+
+if __name__ == "__main__":
+    main()

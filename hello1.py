@@ -1,5 +1,14 @@
-# Demonstrates a function with a positional argument and a return value
+# Has function return a str instead
 
-name = input("What's your name? ")
-print("hello,")
-print(name)
+
+def main():
+    name = input("What's your name? ")
+    print(hello(name))
+
+
+def hello(to="world"):
+    return f"hello, {to}"
+
+
+if __name__ == "__main__":
+    main()

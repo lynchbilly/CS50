@@ -1,8 +1,14 @@
-# Demonstrates formatting with commas
+# Tests a function with multiple functions via pytest
 
-x = float(input("What's x? "))
-y = float(input("What's y? "))
 
-z = round(x + y)
+def main():
+    x = int(input("What's x? "))
+    print("x squared is", square(x))
 
-print(f"{z:,}")
+
+def square(n):
+    return n * n
+
+
+if __name__ == "__main__":
+    main()

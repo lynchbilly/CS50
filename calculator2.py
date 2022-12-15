@@ -1,8 +1,14 @@
-# Demonstrates conversion from str to int
+# Demonstrates defining a function with a return value
 
-x = input("What's x? ")
-y = input("What's y? ")
 
-z = int(x) + int(y)
+def main():
+    x = int(input("What's x? "))
+    print("x squared is", square(x))
 
-print(z)
+
+def square(n):
+    return n * n
+
+
+if __name__ == "__main__":
+    main()

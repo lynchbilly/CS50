@@ -1,8 +1,13 @@
-# Demonstrates addition
+# Demonstrates defining a function with a return value
 
-x = 1
-y = 2
 
-z = x + y
+def main():
+    x = int(input("What's x? "))
+    print("x squared is", square(x))
 
-print(z)
+
+def square(n):
+    return n * n
+
+
+main()

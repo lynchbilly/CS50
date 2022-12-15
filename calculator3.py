@@ -1,8 +1,14 @@
-# Demonstrates nesting of function calls
+# Demonstrates defining a function with a return value
 
-x = int(input("What's x? "))
-y = int(input("What's y? "))
 
-z = x + y
+def main():
+    x = int(input("What's x? "))
+    print("x squared is", square(x))
 
-print(z)
+
+def square(n):
+    return n * n
+
+
+if __name__ == "__main__":
+    main()

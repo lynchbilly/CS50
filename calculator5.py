@@ -1,8 +1,14 @@
-# Demonstrates rounding to nearest int
+# Tests a function with one function via pytest
 
-x = float(input("What's x? "))
-y = float(input("What's y? "))
 
-z = round(x + y)
+def main():
+    x = int(input("What's x? "))
+    print("x squared is", square(x))
 
-print(z)
+
+def square(n):
+    return n * n
+
+
+if __name__ == "__main__":
+    main()
